@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 700px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 5px;
+    
+}
+
+#leftside {
+    padding: 40px;
+}
+
+#leftside > p {
+    font-size: 0.8rem;
+    color: hsla(0, 2%, 76%, 0.75);
+    position: relative;
+    top: 1rem;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+#stats {
+    display: flex;
+    position: relative;
+    top: 4rem;  
+    width: 16rem;
+    justify-content: space-between;
+}
+
+#stats div {
+    background-color: pink;
+    line-height: 1.3rem;
+}
+
+#stats p:last-child {
+    color: green;
+    font-size: 0.7rem;
+}
