@@ -20,8 +20,9 @@ img {
   max-width: 100%;
   max-height: 100%;
   display: block;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.5;
 }
 
 #card {
@@ -31,11 +32,19 @@ img {
   width: 700px;
   background-color: hsl(244, 38%, 16%);
   color: white;
-  border-radius: 5px;
+  border-top-right-radius: 50ox;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 #leftside {
   padding: 40px;
+}
+
+#rightside {
+  background-color: hsl(279, 71%, 35%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #leftside > p {
@@ -73,21 +82,25 @@ span {
   color: hsla(0, 2%, 76%, 0.75);
 }
 
-@media only screen and (max-width: 641px) {
+@media only screen and (max-width: 672px) {
   h1 {
     font-size: 1.3rem;
   }
+  #leftside > p {
+    font-size: 0.6rem;
+  }
 
   #stats {
-    top: 3rem;
+    top: 4rem;
     font-size: 0.8rem;
+    width: 240px;
   }
   #stats p:last-child {
     font-size: 0.6rem;
   }
 }
 
-@media only screen and (max-width: 603px) {
+@media only screen and (max-width: 630px) {
   #card {
     width: 575px;
   }
@@ -95,10 +108,22 @@ span {
     font-size: 1rem;
   }
 
-  #stats {
-    top: 2.3rem;
-    font-size: 0.7rem;
+  img {
+    height: 100%;
   }
+
+  #leftside > p {
+    font-size: 0.5rem;
+
+    width: 200px;
+  }
+
+  #stats {
+    top: 3.3rem;
+    font-size: 0.7rem;
+    width: 180px;
+  }
+
   #stats p:last-child {
     font-size: 0.5rem;
   }
@@ -118,17 +143,91 @@ span {
   }
 
   #stats {
-    margin-top: 15px;
+    margin-top: 7px;
   }
 }
 
-@media only screen and (max-width: 569px) {
-  h1 {
-    margin-top: 10px;
+@media only screen and (max-width: 541px) {
+  #stats {
+    top: 3rem;
   }
 }
-@media only screen and (max-width: 536px) {
+
+@media only screen and (max-width: 517px) {
+  h1 {
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (max-width: 482px) {
+  h1 {
+    margin-top: -0.3rem;
+  }
+}
+@media only screen and (max-width: 459px) {
+  h1 {
+    font-size: 0.8rem;
+  }
+
   #stats {
-    top: 20px;
+    margin-top: -0.9rem;
+    font-size: 0.6rem;
+  }
+
+  #stats p:last-child {
+    font-size: 0.45rem;
+    margin-top: -0.6rem;
+  }
+}
+
+@media only screen and (max-width: 409px) {
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #card {
+    flex-direction: column-reverse;
+    width: 90%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  #leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #leftside > p {
+    font-size: 0.9rem;
+    text-align: center;
+    position: relative;
+    top: 0rem;
+    padding: 1rem;
+  }
+
+  #rightside {
+    border-top-left-radius: 10px;
+  }
+
+  #stats {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.1rem;
+    display: flex;
+  }
+
+  #stats p:first-child {
+    margin-top: 1.5rem;
+  }
+
+  #stats p:last-child {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  img {
+    border-top-left-radius: 10px;
   }
 }
